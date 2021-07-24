@@ -9,7 +9,7 @@
  * @format: parameter
  * Return: 0
  */
-int _printf(const char *format, ...);
+// int _printf(const char *format, ...);
 int _putchar(char c);
 int caseselect(char mod, va_list list);
 #endif /*_HOLBERTON_H_*/
