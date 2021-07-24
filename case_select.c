@@ -1,0 +1,13 @@
+#include "holberton.h"
+/**
+ * caseselect - function that finds which function we use to print
+ * @mod: character after the escape character %
+ * @list: variadical arguments from _printf
+ * Return: lenght of what is printed
+ */
+int caseselect(char mod, va_list list)
+{
+	// this function will check for the test cases
+	// and call a function to print accordinly to the desired output
+	// Returns the amount of characters printed
+}
