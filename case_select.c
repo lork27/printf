@@ -18,19 +18,20 @@ int caseselect(char mod, va_list list)
 	switch(mod)
 	{
 		case 's':
-		str = va_arg(list, char * );
-		for (i = 0; str[i] != '\0'; i++)
-		{
-			_putchar(str[i]);
-		}
-		return (i);
-		break;
+			str = va_arg(list, char *);
+			for (i = 0; str[i] != '\0'; i++)
+			{
+				_putchar(str[i]);
+			}
+			return (i - 1);
+			//we return i - 1 so it is the amount of character printed not including null byte
+			break;
 
 		case 'c':
-		c = va_arg(list, int);
-		_putchar(c);
-		return (1);
-		break;
+			c = va_arg(list, int);
+			_putchar(c);
+			return (1);
+			break;
 	}
 	va_end(list);
 	return (0);

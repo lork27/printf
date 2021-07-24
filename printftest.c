@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 int _printf(char *sentence, ...);
 
@@ -8,7 +9,13 @@ int _printf(char *sentence, ...);
  */
 int main(void)
 {
-        _printf("Hi my name is %s and I am %i years old");
+	int checklen;
+	//int to store return of our _printf to check we are getting the proper return
+
+	checklen = _printf("Print a string: %s and then a char: %c\n", "it works", 'F');
+	_printf("Print a string: %s and then a char: %c\n", "it works", 'F');
+	printf("%i\n", checklen);
+	return (0);
 }
 
 int _printf(char *sentence, ...)
@@ -30,7 +37,7 @@ int _printf(char *sentence, ...)
 			//after finding the escape character we pass what's next to our
 			//caselect function and add +1 to the index variable so it
 			//doesn't print the format modifier, s i d c etc.
-			//in sum we are storing the return of caseselect to then return it
+			//in sum we are storing the return of caseselect to then return it at the end
 			sum += caseselect(sentence[i + 1], list);
 			i++;
 		}
@@ -41,7 +48,6 @@ int _printf(char *sentence, ...)
 			sum++;
 		}
 	}
-	_putchar('\n');
 	va_end(list);
 	return(sum);
 	
