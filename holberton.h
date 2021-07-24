@@ -11,7 +11,7 @@
  */
 // int _printf(const char *format, ...);
 int _putchar(char c);
-int printchar(char c, va_list);
-int printstr(char *s, va_list);
+int printchar(char c);
+int printstr(char *s);
 int caseselect(char mod, va_list list);
 #endif /*_HOLBERTON_H_*/
