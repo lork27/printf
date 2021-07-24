@@ -5,26 +5,21 @@
  * @list: variadical arguments from _printf
  * Return: lenght of what is printed
  */
+
 int caseselect(char mod, va_list list)
 {
 	// this function will check for the test cases
 	// and call a function to print accordinly to the desired output
 	// Returns the amount of characters printed
-
-	char *str;
-	char c;
-
 	switch(mod)
 	{
 		case 's':
-			str = va_arg(list, char *);
-			return (printstr(str, list));
+			return (printstr(va_arg(list, char *)));
 			// called a function that prints a string and returns the numbers o characters printed
 			break;
 
 		case 'c':
-			c = va_arg(list, int);
-			return (printchar(c, list));
+			return (printchar((va_arg(list, int))));
 			// function that prints a character and returns 1
 			break;
 	}
