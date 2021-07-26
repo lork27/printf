@@ -28,7 +28,7 @@ int caseselect(char mod, va_list list)
 		default:
 			_putchar('%');
 			_putchar(mod);
-			return (1);
+			return (2);
 	}
 	va_end(list);
 	return (0);
