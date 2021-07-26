@@ -21,13 +21,23 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%' && format[i + 1] != '\0')
 		{
-			totalchars += caseselect(format[++i], list);
+			if (format[i + 1] == 's' || format[i + 1] == 'c')
+			{
+				totalchars += caseselect(format[i + 1], list);
+				i++;
+			}
+			else if (format[i] == '%' && format[i + 1] == '%')
+			{
+				continue;
+			}
+			else
+			{
+				totalchars += _putchar('%');
+			}
 		}
 
 		else
 		{
-			if (format[i] == '%' && format[i + 1] == '\0')
-				return (-1);
 			totalchars += (_putchar(format[i]));
 		}
 	}
