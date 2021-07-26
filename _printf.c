@@ -19,15 +19,9 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%' && format[i + 1] != '\0')
 		{
-			if (format[i + 1] == '%')
-			{
-				totalchars += _putchar(format[i++]);
-			}
-			else
-			{
-				totalchars += caseselect(format[i], list);
-			}
+			totalchars += caseselect(format[++i], list);
 		}
+
 		else
 		{
 			if (format[i] == '%' && format[i + 1] == '\0')
