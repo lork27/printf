@@ -7,6 +7,7 @@
 int printstr(char *s)
 {
 	int i;
+
 	if (s == NULL)
 		s = "(null)";
 
