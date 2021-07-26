@@ -19,29 +19,17 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%' && format[i + 1] != '\0')
 		{
-			/**
-			 * checks for the % escape caracter and passes what is next to a
-			 * function that selects what to do with it
-			 */
-			if (format[++i] == '%')
+			if (format[i + 1] == '%')
 				totalchars += _putchar('%');
 			else
-			{
-				totalchars += caseselect(format[i + 1], list);
-				i++;
-			}
+				totalchars += caseselect(format[++i], list);
 		}
 		else if (format[i] == '%' && format[i + 1] == '\0')
 		{
-			/**
-			 *if % is the last character of format string don't
-			 *pass it to our case selector
-			 */
 			return (-1);
 		}
 		else
 		{
-			/*if not the escape character just print normally*/
 			_putchar(format[i]);
 			totalchars++;
 		}
