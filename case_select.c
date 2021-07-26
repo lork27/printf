@@ -26,6 +26,7 @@ int caseselect(char mod, va_list list)
 			return (printchar((va_arg(list, int))));
 			/*function that prints a character and returns 1 */
 		default:
+			_putchar('%');
 			_putchar(mod);
 			return (1);
 	}
