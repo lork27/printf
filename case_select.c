@@ -18,7 +18,10 @@ int caseselect(char mod, va_list list)
 	{
 		case 's':
 			return (printstr(va_arg(list, char *)));
-			/*called a function that prints a string and returns the numbers o characters printed*/
+			/**
+			 *calls a function that prints a string and
+			 *returns the numbers o characters printed
+			 */
 		case 'c':
 			return (printchar((va_arg(list, int))));
 			/*function that prints a character and returns 1 */
