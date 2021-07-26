@@ -38,7 +38,7 @@ int _printf(const char *format, ...)
 		{
 			/*if not the escape character just print normally*/
 			_putchar(format[i]);
-			totalctotalcharss++;
+			totalchars++;
 		}
 	}
 	va_end(list);
