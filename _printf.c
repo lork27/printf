@@ -23,7 +23,10 @@ int _printf(const char *format, ...)
 			 * checks for the % escape caracter and passes what is next to a
 			 * function that selects what to do with it
 			 */
-			totalchars += caseselect(format[i + 1], list);
+			if (format[++i] == '%')
+				totalchars += _putchar('%');
+			else
+				totalchars += caseselect(format[i + 1], list);
 			i++;
 		}
 		else if (format[i] == '%' && format[i + 1] == '\0')
