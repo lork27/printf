@@ -17,19 +17,22 @@ int _printf(const char *format, ...)
 		return (-1);
 	for (i = 0; format[i] != '\0'; i++)
 	{
-		if (format[i] == '%' && format[i + 1] != '\0' && format[i + i] != '%')
+		if (format[i] == '%' && format[i + 1] != '\0')
 		{
-			totalchars += caseselect(format[i + 1], list);
-			i++;
-		}
-		else if (format[i] == '%' && format[i + 1] == '\0')
-		{
-			return (-1);
+			if (format[i + 1] == '%')
+			{
+				totalchars += _putchar(format[i++]);
+			}
+			else
+			{
+				totalchars += caseselect(format[i], list);
+			}
 		}
 		else
 		{
-			_putchar(format[i]);
-			totalchars++;
+			if (format[i] == '%' && format[i + 1] == '\0')
+				return (-1);
+			totalchars += (_putchar(format[i]));
 		}
 	}
 	va_end(list);
