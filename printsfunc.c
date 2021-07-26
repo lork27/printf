@@ -15,7 +15,7 @@ int printstr(char *s)
 	{
 		_putchar(s[i]);
 	}
-	return (i - 1);
+	return (i);
 }
 /**
  * printchar - functio that prints a character
