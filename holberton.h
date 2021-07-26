@@ -4,12 +4,8 @@
 #include <stdio.h>
 #include <limits.h>
 #include <unistd.h>
-/**
- * _printf - function to print
- * @format: parameter
- * Return: 0
- */
-// int _printf(const char *format, ...);
+
+int _printf(const char *format, ...);
 int _putchar(char c);
 int printchar(char c);
 int printstr(char *s);

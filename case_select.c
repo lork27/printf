@@ -8,20 +8,23 @@
 
 int caseselect(char mod, va_list list)
 {
-	// this function will check for the test cases
-	// and call a function to print accordinly to the desired output
-	// Returns the amount of characters printed
-	switch(mod)
+	/**
+	*this function will check for the test cases
+	*and call a function to print accordinly to the desired output
+	*Returns the amount of characters printed
+	*/
+
+	switch (mod)
 	{
 		case 's':
 			return (printstr(va_arg(list, char *)));
-			// called a function that prints a string and returns the numbers o characters printed
-			break;
-
+			/*called a function that prints a string and returns the numbers o characters printed*/
 		case 'c':
 			return (printchar((va_arg(list, int))));
-			// function that prints a character and returns 1
-			break;
+			/*function that prints a character and returns 1 */
+		default:
+			_putchar(mod);
+			return (1);
 	}
 	va_end(list);
 	return (0);

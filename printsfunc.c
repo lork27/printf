@@ -2,8 +2,7 @@
 /**
  * printstr - function prints a string
  * @s: string to be printed
- * @list: arguments from printf
- * Return: amount of characters
+ * Return: amount of characters printed
  */
 int printstr(char *s)
 {
@@ -18,8 +17,7 @@ int printstr(char *s)
 /**
  * printchar - functio that prints a character
  * @c: character to be printed
- * @list: arguments from printf
- * Return: character
+ * Return: 1 since one char was printed
  */
 int printchar(char c)
 {
