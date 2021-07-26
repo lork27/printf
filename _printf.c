@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 		return (-1);
 	for (i = 0; format[i] != '\0'; i++)
 	{
-		if (format[i] == '%' && format[i + 1] != '\0')
+		if (format[i] == '%' && format[i + 1] != '\0' && format[i + i] != '%')
 		{
 			totalchars += caseselect(format[i + 1], list);
 			i++;
