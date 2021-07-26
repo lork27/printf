@@ -1,0 +1,4 @@
+#!/bin/bash
+rm a.out
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
+./a.out
