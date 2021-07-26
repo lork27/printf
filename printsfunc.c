@@ -7,6 +7,8 @@
 int printstr(char *s)
 {
 	int i;
+	if (s == NULL)
+		s = "(null)";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
