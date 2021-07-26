@@ -22,10 +22,6 @@ int _printf(const char *format, ...)
 			totalchars += caseselect(format[i + 1], list);
 			i++;
 		}
-		if (format[i] == '%' && format[i + 1] == '%')
-		{
-			totalchars += caseselect(format[i + 1], list);
-		}
 		else if (format[i] == '%' && format[i + 1] == '\0')
 		{
 			return (-1);
