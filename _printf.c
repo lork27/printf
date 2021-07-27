@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%' && format[i + 1] == '%')
 		{
-			totalchars += _putchar(format[i]);
+			totalchars += _putchar(format[i + 1]);
 			continue;
 		}
 		if (format[i] == '%')
