@@ -29,7 +29,7 @@ int printchar(char c)
 }
 /**
  *printnum - prints number with putchar using recursion
- *@i: number to be printed
+ *@n: number to be printed
  *@counter: int we are using to keep track the number of numbers printed
  *Return: counter
  */
