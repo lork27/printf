@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 			totalchars += _putchar(format[i + 1]);
 			continue;
 		}
-		if (format[i] == '%')
+		if (format[i] == '%' && format[i + 1] != '\0')
 		{
 			if (format[i + 1] == 's' || format[i + 1] == 'c' ||
 					format[i + 1] == 'i' || format[i + 1] == 'd')
