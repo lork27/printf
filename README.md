@@ -13,4 +13,4 @@ and how to design the proper formatting specification for any occasion.
 
 This **printf** if successfully compiled and executed, should return the number of characters
 printed (excluding the null byre). And if it fails, then the function should return a (-1) upon error
-and '"(null)"' if the string argument in NULL.
+and `"(null)"` if the string argument in NULL.
