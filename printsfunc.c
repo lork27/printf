@@ -35,19 +35,16 @@ int printchar(char c)
  */
 int printnum(int n, int counter)
 {
-	counter = 0;
 	if (n < 0)
 	{
-		_putchar('-');
-		n = -n;
-		counter++;
+		counter += _putchar('-');
+		n = (n * -1);
 	}
 	if (n / 10)
 	{
 		printnum(n / 10, counter++);
 	}
-	_putchar(n % 10 + '0');
-	counter++;
+	counter += _putchar(n % 10 + '0');
 	return (counter);
 }
 /**
