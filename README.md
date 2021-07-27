@@ -24,7 +24,11 @@ and `"(null)"` if the string argument in NULL.
 - Write output to stdout.
 
 ## File explanation
-| Syntax | Description |
+| File | Description |
 | ----------- | ----------- |
 | Header | Title |
 | Paragraph | Text |
+
+## Format Specifiers
+| Function | Description | Format Specifier |
+| ----------- | ----------- | ----------- |
