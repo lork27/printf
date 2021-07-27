@@ -5,13 +5,17 @@
 printf \- format and print data 
 .SH SYNOPSIS
 printf FORMAT [ARGUMENT]...
+
 printf OPTION
 .SH DESCRIPTION
 printf is a control parameter used by functions to output a sertain sentence or number.
 .SH OPTIONS
 The nuseradd does not take any options. However, you can supply username.
 .SH SEE ALSO
-useradd(8), passwd(5), nuseradd.debian(8) 
+printf(3)
+
+Full documentation at: <https://www.gnu.org/software/coreutils/printf>
+or available locally via: info '(coreutils) printf invocation'
 .SH BUGS
 No known bugs.
 .SH AUTHORS
