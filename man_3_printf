@@ -26,8 +26,6 @@ FORMAT controls the output as in C printf.  Interpreted sequences are:
 
 %c 	 character
 
-.SH OPTIONS
-The nuseradd does not take any options. However, you can supply username.
 .SH SEE ALSO
 printf(3)
 
