@@ -4,9 +4,24 @@
 .SH NAME
 printf \- format and print data 
 .SH SYNOPSIS
-printf FORMAT [ARGUMENT]...
+#include "holberton.h"
 
-printf OPTION
+
+int _printf(const char *format, ...);
+
+int _putchar(char c);
+
+int printchar(char c);
+
+int printstr(char *s);
+
+int caseselect(char mod, va_list list);
+
+int val_mod(char modifier[], char index);
+
+int printnum(int n, int counter);
+
+
 .SH DESCRIPTION
 printf is a control parameter used by functions to output a certain sentence or number.
 
