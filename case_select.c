@@ -30,6 +30,13 @@ int caseselect(char mod, va_list list)
 	return (0);
 }
 
+/**
+ *val_mod - returns 1 if we find a match
+ *@modifiers: array that stores modifiers
+ *@index: character we compare to
+ *Return: 1 if match 0 if not
+ */
+
 int val_mod(char modifiers[], char index)
 {
 	int i;
