@@ -28,6 +28,29 @@ int printchar(char c)
 	return (1);
 }
 /**
+ *printnum - prints number with putchar using recursion
+ *@i: number to be printed
+ *@counter: int we are using to keep track the number of numbers printed
+ *Return: counter
+ */
+int printnum(int n, int counter)
+{
+	counter = 0;
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+		counter++;
+	}
+	if (n / 10)
+	{
+		printnum(n / 10, counter++);
+	}
+	_putchar(n % 10 + '0');
+	counter++;
+	return (counter);
+}
+/**
  * _putchar - writes the character c to stdout
  * @c: The character to print
  *

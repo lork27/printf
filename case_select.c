@@ -25,6 +25,9 @@ int caseselect(char mod, va_list list)
 		case 'c':
 			return (printchar((va_arg(list, int))));
 			/*function that prints a character and returns 1 */
+		case 'i':
+		case 'd':
+			return (printnum((va_arg(list, int)), 0));
 	}
 	va_end(list);
 	return (0);

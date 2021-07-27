@@ -9,7 +9,7 @@ int _printf(const char *format, ...)
 {
 	int i, totalchars  = 0;
 	va_list list;
-	char modifiers[3] = {'c', 's', '\0'};
+	char modifiers[5] = {'c', 's', 'i', 'd', '\0'};
 
 	if (format == NULL)
 		return (-1);

@@ -11,4 +11,5 @@ int printchar(char c);
 int printstr(char *s);
 int caseselect(char mod, va_list list);
 int val_mod(char modifier[], char index);
+int printnum(int n, int counter);
 #endif /*_HOLBERTON_H_*/
