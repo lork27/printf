@@ -33,4 +33,5 @@ and `"(null)"` if the string argument in NULL.
 | Function | Description | Format Specifier |
 | ----------- | ----------- | ----------- |
 | `printchar` | function that prints a single character | `%c` |
-|
+| `printstr` | function that prints a string | `%s` |
+
