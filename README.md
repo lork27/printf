@@ -34,4 +34,4 @@ and `"(null)"` if the string argument in NULL.
 | ----------- | ----------- | ----------- |
 | `printchar` | function that prints a single character and returns 1 | `%c` |
 | `printstr` | function that prints a string and returns amount of characters printed | `%s` |
-| `printnum` | function that prints number with putchar using recursion | `%i`, `%d` |
+| `printnum` | function that prints number with putchar using recursion and returns counter | `%i`, `%d` |
