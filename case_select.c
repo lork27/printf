@@ -29,3 +29,15 @@ int caseselect(char mod, va_list list)
 	va_end(list);
 	return (0);
 }
+
+int val_mod(char modifiers[], char index)
+{
+	int i;
+
+	for(i = 0; modifiers[i] != '\0'; i++)
+	{
+		if (modifiers[i] == index)
+			return (1);
+	}
+	return (0);
+}
