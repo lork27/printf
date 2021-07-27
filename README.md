@@ -26,7 +26,10 @@ and `"(null)"` if the string argument in NULL.
 ## File explanation
 | File | Description |
 | ----------- | ----------- |
-| Header | Title |
+| \_printf.c | The main file in which the function that emulates **printf** resides.
+It contains an array to handle the format specifiers and uses conditional statements
+to find the escape character and if what's next is a format modifier,
+we pass it to a selector function. |
 | Paragraph | Text |
 
 ## Format Specifiers
