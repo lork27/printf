@@ -35,16 +35,23 @@ int printchar(char c)
  */
 int printnum(int n, int counter)
 {
+	unsigned int num;
+
 	if (n < 0)
 	{
-		counter += _putchar('-');
-		n = (n * -1);
+		_putchar('-');
+		counter++;
+		num = (n * -1);
 	}
-	if (n / 10)
+	else
+		num = n;
+
+	if (num / 10)
 	{
-		printnum(n / 10, counter++);
+		counter = printnum(num / 10, counter);
 	}
-	counter += _putchar(n % 10 + '0');
+	_putchar(num % 10 + '0');
+	counter++;
 	return (counter);
 }
 /**
