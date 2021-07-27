@@ -22,3 +22,9 @@ and `"(null)"` if the string argument in NULL.
 - `format` is a character string. `man 3 printf` for more info.
 - Returns: the numbers of characters printed(excluding null byte).
 - Write output to stdout.
+
+## File explanation
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
