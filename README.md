@@ -15,7 +15,7 @@ This **printf** if successfully compiled and executed, should return the number 
 printed (excluding the null byre). And if it fails, then the function should return a (-1) upon error
 and `"(null)"` if the string argument in NULL.
 
-### Prototype
+## Prototype
 
 `int _printf(const char *format, ...)`
 
