@@ -1,10 +1,16 @@
-**placeholder readme for the printf**
+#C - printf
 
-**this readme has to have detailed descriptions**
+## Description
 
-ideas how to do it
+This **printf** function is a simple exact replica of the printf function found in the
+**C programming language**. Whatever format specifiers you use in the actual **printf** function
+will work in our **printf** function.
 
->We need a 'selector' function like in the calculator task that parses through a list of objects
-using (format) from int _print(const char *format, ...);_ and selects accordingly the function to execute
+**printf** is the C language function to do formated printing.
+The same function is also available in **PERL**.
+This paper explains how **printf** works,
+and how to design the proper formatting specification for any occasion.
 
->
+This **printf** if successfully compiled and executed, should return the number of characters
+printed (excluding the null byre). And if it fails, then the function should return a (-1) upon error
+and '"(null)"' if the string argument in NULL.
