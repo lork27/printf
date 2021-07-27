@@ -34,7 +34,7 @@ int val_mod(char modifiers[], char index)
 {
 	int i;
 
-	for(i = 0; modifiers[i] != '\0'; i++)
+	for (i = 0; modifiers[i] != '\0'; i++)
 	{
 		if (modifiers[i] == index)
 			return (1);
