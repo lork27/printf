@@ -8,7 +8,13 @@ printf FORMAT [ARGUMENT]...
 
 printf OPTION
 .SH DESCRIPTION
-printf is a control parameter used by functions to output a sertain sentence or number.
+printf is a control parameter used by functions to output a certain sentence or number.
+
+.SH 	--help
+	display this help and exit
+
+.SH 	--version
+	output version information and exit
 .SH OPTIONS
 The nuseradd does not take any options. However, you can supply username.
 .SH SEE ALSO
