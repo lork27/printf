@@ -15,6 +15,17 @@ printf is a control parameter used by functions to output a certain sentence or 
 
 .SH 	--version
 	output version information and exit
+
+FORMAT controls the output as in C printf.  Interpreted sequences are:
+
+%S 	 string
+
+%i 	 integer
+
+%d 	 integer
+
+%c 	 character
+
 .SH OPTIONS
 The nuseradd does not take any options. However, you can supply username.
 .SH SEE ALSO
