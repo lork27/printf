@@ -9,6 +9,7 @@ int _printf(const char *format, ...)
 {
 	int i, totalchars  = 0;
 	va_list list;
+	char modifiers[3] = {'c', 's', '\0'};
 
 	if (format == NULL)
 		return (-1);
@@ -20,7 +21,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			if (format[i + 1] == 's' || format[i + 1] == 'c')
+			if (val_mod(modifiers, format[i + 1]))
 			{
 				totalchars += caseselect(format[i + 1], list);
 				i++;
