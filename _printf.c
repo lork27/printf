@@ -20,17 +20,20 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%' && format[i + 1] != '\0')
 		{
-			if (format[i + 1] == 's' || format[i + 1] == 'c')
+			if (format[i + 1] == 's' || format[i + 1] == 'c' ||
+					format[i + 1] == 'i' || format[i + 1] == 'd')
 			{
 				totalchars += caseselect(format[i + 1], list);
 				i++;
 			}
 			else if (format[i] == '%' && format[i + 1] == '%')
 			{
+				totalchars += caseselect(format[i + 1], list);
 				continue;
 			}
 			else
 			{
+				totalchars += _putchar('%');
 				totalchars += _putchar('%');
 			}
 		}
