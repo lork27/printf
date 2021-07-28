@@ -132,3 +132,7 @@ code code code and more code
 ### Bugs
 
 At the moment there is no known bugs for our \_printf program.
+
+### About
+
+All files were created using `ubuntu 20.04`
