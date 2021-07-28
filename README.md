@@ -29,6 +29,7 @@ and `"(null)"` if the string argument in NULL.
 | [\_printf.c](https://github.com/lork27/printf/blob/main/_printf.c) | The main file in which the function that emulates **printf** resides. It contains an array to handle the format specifiers and uses conditional statements to find the escape character and if what's next is a format modifier, we pass it to a selector function. |
 | [case\_select.c](https://github.com/lork27/printf/blob/main/case_select.c) | After we find a format specifier in the format string we pass it to a function that uses a switch statement to select which printing function we should call. |
 | [printsfunc.c](https://github.com/lork27/printf/blob/main/printsfunc.c) | This file contains the 3 printing functions and a recreation of **putchar**. It handles strings, characters and integers. |
+| [holberton.h](https://github.com/lork27/printf/blob/main/holberton.h) | The header file that contains all of the prototypes and libraries we are using.
 
 
 ## Format Specifiers
