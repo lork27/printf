@@ -131,4 +131,4 @@ code code code and more code
 
 ### Bugs
 
-at the moment there is no known bugs for our \_printf program.
+At the moment there is no known bugs for our \_printf program.
