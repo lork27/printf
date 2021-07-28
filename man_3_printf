@@ -4,24 +4,35 @@
 .SH NAME
 printf \- format and print data 
 .SH SYNOPSIS
-#include "holberton.h"
+.B #include "holberton.h"
+.nf
+.B int _printf(const char *format, ...);
+.fi
+.P
+Here we parse through the formal printing every character one by one also cheking if we find any format modifier.
+If we end up finding a format modifier,we pass the character after the escape character to the fuction called case_select.
 
+.B int _putchar(char c);
+.P
+This is a custom implementation of putchar that prints using write and returns 1 if it prints something.
 
-int _printf(const char *format, ...);
+.B int printchar(char c);
+.P
+Recieves a single character, prints it out and returns 1.
 
-	Here we parse through the formal printing every character one by one also cheking if we find any format modifier. If we end up finding a format modifier, we pass the character after the escape character to the fuction called case_select.
+.B int printstr(char *s);
+.P
+Parses through the passed string printing character by character and returns the amount of printed characters.
+Also checks if NULL is passed.
 
-int _putchar(char c);
+.B int caseselect(char mod, va_list list);
+.P
+This function takes the character we found after the escape character in the format strings and takes it
+alongside the list of arguments form _printf and calls the appropiate printing function.
 
-int printchar(char c);
+.B int val_mod(char modifier[], char index);
 
-int printstr(char *s);
-
-int caseselect(char mod, va_list list);
-
-int val_mod(char modifier[], char index);
-
-int printnum(int n, int counter);
+.B int printnum(int n, int counter);
 
 
 .SH DESCRIPTION
