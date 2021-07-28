@@ -15,6 +15,7 @@ This **printf** if successfully compiled and executed, should return the number 
 printed (excluding the null byre). And if it fails, then the function should return a (-1) upon error
 and `"(null)"` if the string argument in NULL.
 
+
 ### Prototype
 
 `int _printf(const char *format, ...)`
@@ -22,6 +23,7 @@ and `"(null)"` if the string argument in NULL.
 - `format` is a character string. `man 3 printf` for more info.
 - Returns: the numbers of characters printed(excluding null byte).
 - Write output to stdout.
+
 
 ### File explanation
 | File | Description |
@@ -38,6 +40,7 @@ and `"(null)"` if the string argument in NULL.
 | `printchar` | function that prints a single character and returns 1 | `%c` |
 | `printstr` | function that prints a string and returns amount of characters printed | `%s` |
 | `printnum` | function that prints number with putchar using recursion and returns counter | `%i`, `%d` |
+
 
 ### Compilation
 The code is compiled in this way
