@@ -85,7 +85,17 @@ int main(void)
 Your output should after compiling the program should look something like what's displayed below.
 
 ```
-code code code and more code
+A char inside a sentence: F. Did it work?
+Should print a single percent sign: %
+_printf return:42_printf return:38
+Loading ... 99% Please wait
+num: 12 num: 34
+_printf return:28_printf return:16
+num: -1234444 num: 5678888
+_printf return:27
+num: 2147483647 num: -2147483648
+_printf return:33
+
 ```
 
 ### Bugs
