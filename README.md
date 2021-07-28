@@ -52,7 +52,7 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c
 ### Program Testing
 
 ```
-01:55:10) vagrant@ubuntu-focal:testfiles(main)
+(01:55:10) vagrant@ubuntu-focal:testfiles(main)
   ⟾  cat main.c 
 #include <limits.h>
 #include <stdio.h>
