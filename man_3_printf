@@ -36,7 +36,9 @@ Checks if what is next after finding the escape character is one of the elements
 stores all format modifiers. Returns 1 (true) if it find anything or 0 (false) if not.
 
 .B int printnum(int n, int counter);
-
+.P
+Uses recursion to print one by one the passed int and returns the amount of numbers printed,
+if it finds a negative number converts it to positive and adds the character '-' in front of it.
 
 .SH DESCRIPTION
 printf is a control parameter used by functions to output a certain sentence or number.
