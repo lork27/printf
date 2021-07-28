@@ -9,6 +9,8 @@ printf \- format and print data
 
 int _printf(const char *format, ...);
 
+	Here we parse through the formal printing every character one by one also cheking if we find any format modifier. If we end up finding a format modifier, we pass the character after the escape character to the fuction called case_select.
+
 int _putchar(char c);
 
 int printchar(char c);
