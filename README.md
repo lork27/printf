@@ -121,3 +121,7 @@ int main(void)
 	return (0);
 }
 ```
+### Output Check
+
+Your output should after compiling the program should look something like what's displayed below.
+
