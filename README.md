@@ -125,3 +125,10 @@ int main(void)
 
 Your output should after compiling the program should look something like what's displayed below.
 
+```
+code code code and more code
+```
+
+### Bugs
+
+at the moment there is no known bugs for our \_printf program.
