@@ -49,8 +49,10 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c
 ```
 
 
-### Program Testing
+## Program Testing
+### main.c file test
 
+We created a main.c file were you can test the program in order to see if the custom \_printf function works.
 ```
 (01:55:10) vagrant@ubuntu-focal:testfiles(main)
   ⟾  cat main.c 
