@@ -44,3 +44,5 @@ The code is compiled in this way
 ```
 $ gcc -Wall -Werror -Wextra -pedantic *.c
 ```
+
+## Program Testing
