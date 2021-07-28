@@ -136,3 +136,8 @@ At the moment there is no known bugs for our \_printf program.
 ### About
 
 All files were created using `ubuntu 20.04`
+
+## Authors
+
+- **Guillermo Lorca** - [lork27](https://github.com/lork27)
+- **Andrew Gonzalez** - [Drew-24](https://github.com/Drew-24)
