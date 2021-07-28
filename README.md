@@ -40,6 +40,7 @@ and `"(null)"` if the string argument in NULL.
 | `printnum` | function that prints number with putchar using recursion and returns counter | `%i`, `%d` |
 
 ## Compilation
-The code is compiled this 2 ways
-`$ gcc -Wall -Werror -Wextra -pedantic *.c`
-`$ gcc -Wall -Werror -Wextra -pedantic -Wno-format *.c`
+The code is compiled in this way
+```
+$ gcc -Wall -Werror -Wextra -pedantic *.c
+```
