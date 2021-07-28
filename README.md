@@ -54,71 +54,30 @@ $ gcc -Wall -Werror -Wextra -pedantic *.c
 
 We created a main.c file were you can test the program in order to see if the custom \_printf function works.
 ```
-(01:55:10) vagrant@ubuntu-focal:testfiles(main)
-  ⟾  cat main.c 
-#include <limits.h>
-#include <stdio.h>
 #include "holberton.h"
-
-/**
- * main - Entry point
- *
- * Return: Always 0
- */
 int main(void)
 {
-	int len;
-	int len2;
-	char *p = NULL;
-	char *string = "jarron";
+    int len1;
+    len1 = _printf("A char inside a sentence: %c. Did it work?\n", 'F');
+    printf("_printf return:%i", len1);
 
-	len = _printf("Let's try to printf a simple sentence.\n");
-	len2 = printf("Let's try to printf a simple sentence.\n");
-	_printf("Character:[%c]\n", 'H');
-	printf("Character:[%c]\n", 'H');
-	_printf("String:[%s]\n", "I am a string !");
-	printf("String:[%s]\n", "I am a string !");
+    len1 = _printf("Should print a single percent sign: %%\n");
+    printf("_printf return:%i\n", len1);
 
-	printf(string);
-	printf("\n");
-	_printf(string);
-	printf("\n");
+    len1 = _printf("%s%c%c%c%s%%%s%c", "Loading ", '.', '.', '.', " 99", " Please wait", '\n');
+    printf("_printf return:%i", len1);
 
-	//after finding % the real printf doesn't care about the spaces and whenever it finds the appropiate format modifier it uses it and prints accordinly
-	//without printing the spaces
-	//printf("me llamo %   s pedro\n", s);
-	//_printf("me llamo %  s   Pedro\n", s);
+    len1 = _printf("num: %i num: %d\n", 12, 34);
 
-	
-	//printf("me llamo %  s pedro1\n");
-	//_printf("me llamo %s pedro2\n");
-	//edge cases start here
+    printf("_printf return:%i\n", len1);
+    
+    len1 = _printf("num: %i num: %d\n", -1234444, 5678888);
 
-	//_printf("%%\n");
-	//printf("%%\n");
-	//our _printf doesn't print the second escape character
+    printf("_printf return:%i\n", len1);
 
-	//printf("%\n");
-	//_printf("%\n");
-	//our _printf doesn't print % and newline
-	//printf("%$\n");
-	//_printf("%$\n");
-	
-	//printf("%(ayy)\n");
-	//_printf("%(ayy)\n");
-
-	//printf("%s", p);
-	//putchar('\n');
-	//_printf("%s", p);
-	//putchar('\n');
-	//this one crashed
-
-
-
-	//edge cases ends here
-	printf("len of our printf: %i len of the real printf: %i\n", len, len2);
-
-	return (0);
+    len1 = _printf("num: %i num: %d\n", INT_MAX, INT_MIN);
+    printf("_printf return:%i\n", len1);
+    return (0);
 }
 ```
 ### Output Check
