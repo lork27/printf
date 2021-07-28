@@ -15,7 +15,7 @@ This **printf** if successfully compiled and executed, should return the number 
 printed (excluding the null byre). And if it fails, then the function should return a (-1) upon error
 and `"(null)"` if the string argument in NULL.
 
-## Prototype
+### Prototype
 
 `int _printf(const char *format, ...)`
 
@@ -23,7 +23,7 @@ and `"(null)"` if the string argument in NULL.
 - Returns: the numbers of characters printed(excluding null byte).
 - Write output to stdout.
 
-## File explanation
+### File explanation
 | File | Description |
 | ----------- | ----------- |
 | [\_printf.c](https://github.com/lork27/printf/blob/main/_printf.c) | The main file in which the function that emulates **printf** resides. It contains an array to handle the format specifiers and uses conditional statements to find the escape character and if what's next is a format modifier, we pass it to a selector function. |
@@ -32,17 +32,18 @@ and `"(null)"` if the string argument in NULL.
 | [holberton.h](https://github.com/lork27/printf/blob/main/holberton.h) | The header file that contains all of the prototypes and libraries we are using.
 
 
-## Format Specifiers
+### Format Specifiers
 | Function | Description | Format Specifier |
 | ----------- | ----------- | ----------- |
 | `printchar` | function that prints a single character and returns 1 | `%c` |
 | `printstr` | function that prints a string and returns amount of characters printed | `%s` |
 | `printnum` | function that prints number with putchar using recursion and returns counter | `%i`, `%d` |
 
-## Compilation
+### Compilation
 The code is compiled in this way
 ```
 $ gcc -Wall -Werror -Wextra -pedantic *.c
 ```
 
-## Program Testing
+
+### Program Testing
